@@ -1,5 +1,24 @@
-main {
+*{
+  margin: 0px;
+  box-sizing: border-box;
   text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+}
+@font-face {
+  font-family: 'Kegilka';
+  src: local('Kegilka'),
+  url('./fonts/Kegilka-Font/Kegilka.ttf') format('truetype');
+}
+@font-face {
+  font-family:'Helvetica' ;
+  src:local('Helvetica')
+   url('./fonts/Helvetica-Font') format('truetype');
+}
+
+
+body{
+  background-color: #98473e;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
