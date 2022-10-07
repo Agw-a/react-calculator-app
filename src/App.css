@@ -1,9 +1,18 @@
+:root{
+  --primary:#d81e5b;
+  --secondary:#8c38ff;
+  --dark:#131a26;
+  --light:#eee;
+}
+
 *{
   margin: 0px;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-@font-face {
+/* @font-face {
   font-family: 'Kegilka';
   src: local('Kegilka'),
   url('./fonts/Kegilka-Font/Kegilka.ttf') format('truetype');
@@ -12,13 +21,31 @@
   font-family:'Helvetica' ;
   src:local('Helvetica')
    url('./fonts/Helvetica-Font') format('truetype');
-}
+} */
 
 
 body{
-  background-color: #98473e;
-  height: 100vh;
+  background-color: var(--light);
+  /* height: 100vh;
   display: flex;
+   */
+}
+
+.App{
+  display: flex;
+  height: 100vh;
   align-items: center;
   justify-content: center;
+}
+
+.calculator{
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18); 
 }
