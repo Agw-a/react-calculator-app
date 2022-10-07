@@ -3,13 +3,13 @@ import './App.css'
 
 const App = () => {
 
-  const [calc, setCalc] = useState('')
-  const [res, setRes] = useState('')
+  const [calc, setCalc] = useState('');
+  const [res, setRes] = useState('');
 
   const ops = ['/' ,'*', '+', '-', '.']
 
   const updateCalc = (value) => {
-    setCalc = (calc + value)
+    setCalc(calc + value)
   }
   const createDigits = () => {
     const digits =[];
