@@ -9,7 +9,7 @@ const App = () => {
   const ops = ['/' ,'*', '+', '-', '.']
 
   const updateCalc = (value) => {
-    setCalc = (c)alc + value)
+    setCalc = (calc + value)
   }
   const createDigits = () => {
     const digits =[];
