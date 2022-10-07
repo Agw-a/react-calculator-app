@@ -22,7 +22,7 @@ export default function App() {
       <Output value = '0'/>
       <ButtonWrap>
         {
-          buttonValues .flat().map((btn, i) => {
+          buttonValues.flat().map((btn, i) => {
             return(
               <Button
               key={i}
