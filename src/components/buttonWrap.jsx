@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Buttonwrapper.css';
+import '../styles/buttonwrapper.css';
 
 const ButtonWrap = (buttonComponents) => {
   return (
