@@ -26,13 +26,15 @@
 
 body{
   background-color: var(--light);
+  display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
   
 }
 
- .App{
+.App{
+  display: flex;
   height: 500px;
   align-items: center;
   justify-content: center;
@@ -44,17 +46,14 @@ body{
   height: 100%;
   max-width: 400px;
   background-color: var(--dark);
-  display: grid;
+  display: flex;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border: 1px solid rgba(255, 255, 255, 0.18); 
-  grid-template-rows: repeat(5,  1fr);
 }
-
-
 .display{
   padding: 16px;
   background-color: var(--dark);
@@ -63,13 +62,11 @@ body{
   font-size: 24px;
   font-weight: bold;
 }
-/*
 .display span{
   font-size: 14px;
   color: #aaa;
 }
 button{
-  display: grid;
   appearance: none;
   border: none;
   outline: none;
@@ -85,19 +82,20 @@ button:hover{
 }
 
 .operators {
-  display: grid;
+  display: flex;
 }
 .operators button{
-  
+  flex: 1 1 0%;
   background-color: var(--primary);
   font-weight: 700;
 }
 
 .digits{
-  display: grid;
-  
+  display: flex;
+  flex-wrap: wrap;
 }
 .digits button{
-
+  flex: 1 1 1 33.333%;
+  max-width: 33.333%;
   background-color: var(--dark);
-} */
+}
