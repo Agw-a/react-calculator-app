@@ -9,7 +9,7 @@
   margin: 0px;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia;
+  font-family:  Helvetica;
   text-align: center;
 }
 /* @font-face {
@@ -33,7 +33,7 @@ body{
 
 .App{
   display: flex;
-  height: 400px;
+  height: 70%;
   align-items: center;
   justify-content: center;
   padding: 16px;
