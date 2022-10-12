@@ -43,7 +43,8 @@ body{
 
 .calculator{
   width: 100%;
-  /* max-width: 400px; */
+  height: 100%;
+  max-width: 400px;
   background-color: #fff;
   border-radius: 16px;
   overflow: hidden;
