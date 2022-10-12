@@ -32,7 +32,7 @@ body{
   
 }
 
-.App{
+/* .App{
   height: 500px;
   align-items: center;
   justify-content: center;
@@ -96,4 +96,4 @@ button:hover{
 .digits button{
 
   background-color: var(--dark);
-}
+} */
