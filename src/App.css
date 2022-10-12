@@ -26,9 +26,10 @@
 
 body{
   background-color: var(--light);
-  /* height: 100vh;
   display: flex;
-   */
+  font: Helvetica;
+  height: 100vh;
+  
 }
 
 .App{
