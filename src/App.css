@@ -33,7 +33,7 @@ body{
 
 .App{
   display: flex;
-  height: 100vh;
+  height: 400px;
   align-items: center;
   justify-content: center;
   padding: 16px;
@@ -41,7 +41,7 @@ body{
 
 .calculator{
   width: 100%;
-  max-width: 400px;
+  /* max-width: 400px; */
   background-color: #fff;
   border-radius: 16px;
   overflow: hidden;
