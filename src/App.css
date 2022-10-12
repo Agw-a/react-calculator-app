@@ -65,6 +65,7 @@ body{
   color: #aaa;
 }
 button{
+  display: grid;
   appearance: none;
   border: none;
   outline: none;
@@ -80,20 +81,19 @@ button:hover{
 }
 
 .operators {
-  display: flex;
+  display: grid;
 }
 .operators button{
-  flex: 1 1 0%;
+  
   background-color: var(--primary);
   font-weight: 700;
 }
 
 .digits{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  
 }
 .digits button{
-  flex: 1 1 1 33.333%;
-  max-width: 33.333%;
+;
   background-color: var(--dark);
 }
