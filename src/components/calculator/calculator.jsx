@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 
 import './calculator.css';
 
-import { btns, BTN_ACTIONS } from './btn';
+import { btns, BTN_ACTION } from './btn';
 
 const Calculator = () => {
 
@@ -19,23 +19,23 @@ const Calculator = () => {
     const btnClick = (item) => {
         const expDiv = expRef.current;
 
-        if (item.action === BTN_ACTIONS.THEME) document.body.classList.toggle('dark');
+        if (item.action === BTN_ACTION.THEME) document.body.classList.toggle('dark');
 
-        if (item.action === BTN_ACTIONS.ADD) {
+        if (item.action === BTN_ACTION.ADD) {
             addAnimSpan(item.display);
 
             const oper = item.display !== 'x' ? item.display : '*';
             setExpression(expression + oper);
         }
 
-        if (item.action === BTN_ACTIONS.DELETE) {
+        if (item.action === BTN_ACTION.DELETE) {
             expDiv.parentNode.querySelector('div:last-child').innerHTML = '';
             expDiv.innerHTML = '';
 
             setExpression('');
         }
 
-        if (item.action === BTN_ACTIONS.CALC) {
+        if (item.action === BTN_ACTION.CALC) {
             if (expression.trim().length <= 0) return;
 
             expDiv.parentNode.querySelector('div:last-child').remove();
