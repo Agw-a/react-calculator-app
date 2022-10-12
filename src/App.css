@@ -6,7 +6,7 @@
 }
 
 *{
-  margin: 0px;
+  margin: 0px auto;
   padding: 0;
   box-sizing: border-box;
   font-family:  Helvetica;
@@ -26,7 +26,6 @@
 
 body{
   background-color: var(--light);
-  display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -34,7 +33,6 @@ body{
 }
 
 .App{
-  display: flex;
   height: 500px;
   align-items: center;
   justify-content: center;
@@ -46,7 +44,7 @@ body{
   height: 100%;
   max-width: 400px;
   background-color: var(--dark);
-  display: flex;
+  display: grid;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
