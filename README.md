@@ -1,1 +1,1 @@
-##React calculator application
+React calculator application
